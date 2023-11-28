@@ -1,0 +1,42 @@
+@import "./../../styles/lib/buttons.css";
+:host {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background: var(--grey-surface);
+  border: var(--border);
+  padding: var(--padding);
+}
+:host * {
+  box-sizing: border-box;
+}
+.spacer {
+  flex: 1;
+}
+input {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+button {
+  width: 2rem;
+  height: 2rem;
+}
+#edtPageSize {
+  margin-right: var(--padding);
+}
+#edtPageNumber {
+  width: 2.5rem;
+}
+#divPageCount {
+  color: var(--grey-s1);
+}
+.divide {
+  margin: 0 var(--padding);
+  color: var(--grey-s1);
+}

@@ -1,0 +1,193 @@
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    font-display: swap;
+    src: url(/styles/font/OpenSans-Regular.ttf) format('truetype');
+}
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --padding: 0.5rem;
+
+    --cl-primary: #3386b8;
+    --cl-primary-contrast: white;
+    --cl-window: #f5f5f5;
+    --cl-hover-transparent: rgba(0, 0, 0, 0.1);
+    --cl-text: #333333;
+
+    --h2-margin: 0;
+}
+
+.dark-theme {
+    --cl-primary: #3386b8;
+    --cl-primary-contrast: white;
+    --cl-window: #f5f5f5;
+    --cl-text: #333333;
+    --border: silver solid 1px;
+    --border-contrast: solid 1px var(--cl-primary-contrast);
+}
+
+.light-theme {
+    --cl-primary: #ffffff;
+    --cl-primary-contrast: #3f3f3f;
+    --cl-text: #3f3f3f;
+    --cl-window: #f5f5f5;
+    --border: silver solid 1px;
+    --border-contrast: solid 1px var(--cl-primary-contrast);
+}
+
+html, body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    color: var(--cl-text);
+}
+
+header {
+    border-bottom: var(--border);
+}
+
+header h2 {
+    margin: var(--padding) var(--padding);
+}
+
+aside {
+    display: block;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: max-content;
+    min-width: 300px;
+    height: 100%;
+
+    background: var(--cl-primary);
+    color: var(--cl-primary-contrast);
+    border-right: var(--border);
+    padding: var(--padding);
+
+    translate: -100%;
+    transition: translate 0.3s ease-out;
+    will-change: translate;
+}
+
+aside.open {
+    translate: 0;
+}
+
+aside.open:before {
+    content: "";
+    position: absolute;
+    background: transparent;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    z-index: -2;
+}
+
+aside a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: var(--padding);
+}
+
+aside a:visited {
+    color: var(--cl-primary-contrast);
+}
+
+aside h2 {
+    color: inherit;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li:hover {
+    background: var(--cl-hover-transparent);
+}
+
+nav h2 {
+    margin: 0;
+}
+
+nav hr {
+    border: var(--border-contrast);
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: var(--border);
+    background: var(--cl-primary);
+    color: var(--cl-primary-contrast);
+    padding: 0 var(--padding);
+}
+
+header h2 {
+    flex: 1;
+}
+
+header button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    outline: none;
+    border: 0;
+}
+
+main {
+    outline: none;
+}
+
+footer {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    padding: var(--padding);
+    border-top: var(--border);
+}
+
+.hide {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+view-loader, main {
+    display: grid;
+}
+
+view-loader {
+    background: var(--cl-window);
+}
+
+main {
+    padding: var(--padding);
+}
+
+#btnMenu {
+    padding: 0;
+    fill: var(--cl-primary-contrast);
+}

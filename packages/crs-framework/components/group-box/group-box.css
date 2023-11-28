@@ -1,0 +1,77 @@
+:host {
+  --header-bg: var(--grey-s3);
+  --header-height: 48px;
+  --header-left-border: 4px solid var(--blue);
+  --header-dropdown-btn: 48px;
+  --header-hover-bg: var(--grey-s2);
+  --header-dropdown-focus: 2px solid var(--blue);
+  --border-radius: var(--radius);
+  --header-font-size: 16px;
+  --header-font-weight:bold;
+  --icon-size: 20px;
+  display: block;
+  width: auto;
+  height: auto;
+}
+:host(:focus-within) {
+  border: none !important;
+}
+:host([aria-expanded="false"]) #main {
+  display: none;
+}
+:host([aria-expanded="false"]) #btnToggleExpand:after {
+  rotate: -180deg;
+}
+::slotted([slot="header"]) {
+  display: flex;
+  height: var(--header-height);
+  align-items: center;
+  gap: var(--padding);
+  padding-left: var(--padding);
+  margin-right: var(--padding);
+}
+::slotted([slot="actions"]) {
+  display: flex;
+  height: var(--header-height);
+  align-items: center;
+  gap: var(--padding);
+  padding-right: var(--padding);
+  padding-left: var(--padding);
+}
+::slotted([slot="body"]) {
+  display: flex;
+  flex-flow: column;
+  margin-top: 20px;
+  width: auto;
+}
+header {
+  display: flex;
+  height: var(--header-height);
+  background-color: var(--header-bg);
+  border-left: var(--header-left-border);
+  align-items: center;
+}
+.icon {
+  font-family: crsfrw;
+  font-size: var(--icon-size);
+}
+button {
+  border: none;
+  background: none;
+  outline: none;
+  cursor: pointer;
+  height: var(--header-dropdown-btn);
+  width: var(--header-dropdown-btn);
+}
+button:after {
+  content: "chevron-down";
+  display: block;
+  transition: 300ms ease-in-out;
+}
+#main {
+  height: max-content;
+  padding: var(--padding);
+}
+#title {
+  flex: 1;
+}

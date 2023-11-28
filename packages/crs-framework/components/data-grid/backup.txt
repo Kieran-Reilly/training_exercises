@@ -1,0 +1,192 @@
+<style>
+    data-grid {
+        --cl-border: silver;
+        --cl-column-back: #f2f2f2;
+        --border: 1px solid var(--cl-border);
+        --padding: 0.5rem;
+        --default-height: 2rem;
+        --default-padding: 0 var(--padding);
+
+        --columns: 400px 200px 400px 400px;
+
+        display: grid;
+        grid-template-rows: 3rem 1fr;
+        width: 100%;
+        height: 100%;
+
+        border: var(--border);
+    }
+
+    data-grid .grouping {
+        border-bottom: var(--border);
+        user-select: none;
+    }
+
+    data-grid .grid {
+        position: relative;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: var(--columns);
+        grid-template-rows: 2rem 2rem auto;
+    }
+
+    data-grid [role="columnheader"] {
+        background: var(--cl-column-back);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        border-right: var(--border);
+        border-bottom: var(--border);
+        height: var(--default-height);
+        display: flex;
+        align-items: center;
+        padding: var(--default-padding);
+        user-select: none;
+    }
+
+    data-grid .rows-container {
+        position: relative;
+        grid-column: -1/1;
+    }
+
+    data-grid .column-headers div {
+        border-right: var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    data-grid [role="rowgroup"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: var(--default-height);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: var(--default-padding);
+        border-bottom: var(--border);
+        border-right: var(--border);
+        user-select: none;
+    }
+
+    data-grid [role="rowheader"] {
+        position: sticky;
+        left: calc(var(--padding) + var(--default-height));
+    }
+
+    data-grid [role="row"] {
+        display: grid;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        grid-template-columns: var(--columns);
+        height: max-content;
+    }
+
+    data-grid [role="gridcell"] {
+        border-bottom: var(--border);
+        border-right: var(--border);
+        display: flex;
+        background: white;
+        padding: 0 0.5rem;
+        align-items: center;
+    }
+
+    data-grid .left {
+        justify-content: flex-start;
+    }
+
+    data-grid .right {
+        justify-content: flex-end;
+    }
+
+    data-grid .middle {
+        justify-content: center;
+    }
+
+    data-grid .padding {
+        flex: 1;
+    }
+
+    data-grid .sticky-right {
+        position: sticky;
+        right: var(--padding);
+    }
+
+    data-grid .expand {
+        font-family: "icons";
+        font-size: 1.2rem;
+        width: var(--default-height);
+        height: var(--default-height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: rotate 0.3s ease-out;
+        position: sticky;
+        left: var(--padding);
+        cursor: pointer;
+    }
+
+    data-grid [aria-expanded="true"] .expand {
+        rotate: 90deg;
+    }
+
+    data-grid .marker {
+        position: absolute;
+        top: 0;
+        left: 0;
+        translate: 0 2000px;
+        width: 1px;
+        height: 1px;
+    }
+
+    [data-column="0"] {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+    }
+
+    [role="columnheader"][data-column="0"] {
+        z-index: 2;
+    }
+
+</style>
+
+<div class="grouping"></div>
+<div class="grid" role="grid">
+<!--    <div role="columnheader" style="grid-column: 1 / span 2">Column Group 1</div>-->
+<!--    <div role="columnheader" style="grid-column: 3 / span 2">Column Group 1</div>-->
+
+<!--    <div role="columnheader" data-column="0">Column 1</div>-->
+<!--    <div role="columnheader" data-column="1" class="right">Column 2</div>-->
+<!--    <div role="columnheader" data-column="2">Column 3</div>-->
+<!--    <div role="columnheader" data-column="3">Column 4</div>-->
+
+    <div class="rows-container" dblclick.call="rowExecute" ref="rowContainer">
+<!--        <div role="rowgroup" aria-expanded="false">-->
+<!--            <div class="expand">expand</div>-->
+<!--            <div role="rowheader">Grouping Row</div>-->
+<!--            <div class="padding"></div>-->
+<!--            <div class="sticky-right">count: 10</div>-->
+<!--        </div>-->
+
+<!--        <div role="row" style="translate: 0 2rem; height: 2rem">-->
+<!--            <div role="gridcell" data-column="0">value 1</div>-->
+<!--            <div role="gridcell" data-column="1" class="right">value 2</div>-->
+<!--            <div role="gridcell" data-column="2">value 3</div>-->
+<!--            <div role="gridcell" data-column="3">value 4</div>-->
+<!--        </div>-->
+
+<!--        <div role="row" style="translate: 0 4rem; height: 2rem">-->
+<!--            <div role="gridcell" data-column="0">value 1</div>-->
+<!--            <div role="gridcell" data-column="1" class="right">value 2</div>-->
+<!--            <div role="gridcell" data-column="2">value 3</div>-->
+<!--            <div role="gridcell" data-column="3">value 4</div>-->
+<!--        </div>-->
+
+        <div class="marker"></div>
+    </div>
+</div>

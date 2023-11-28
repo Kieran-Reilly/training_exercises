@@ -1,0 +1,110 @@
+:host {
+  --cell-width: 200px;
+  --padding: 0.5rem;
+  --rows: minmax(2rem, max-content) 1fr;
+  --cell-background: white;
+  --background: #E7E7E7;
+  --border: 1px solid var(--background);
+  --columnheader-borders: 10px 10px 0 0;
+  --card-background: #F4F6F8;
+  --card-left: #0276C2;
+  --card-borders: 5px 0 0 5px;
+  --height: 2000px;
+  display: grid;
+  grid-template-rows: var(--rows);
+  width: 100%;
+  height: 100%;
+  background: var(--background);
+  padding: var(--padding);
+  gap: 0.1rem;
+  overflow: auto;
+  box-sizing: border-box;
+  user-select: none;
+}
+.header,
+.container {
+  display: grid;
+  grid-template-columns: var(--columns);
+  gap: var(--padding);
+}
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 -8px var(--background);
+  filter: drop-shadow(0 -8px 0 var(--background));
+}
+.container {
+  position: relative;
+  height: var(--height);
+}
+.container > [role=cell] {
+  background: var(--cell-background);
+  border: var(--border);
+  padding: var(--padding);
+}
+[role=columnheader] {
+  width: 100%;
+  background: var(--cell-background);
+  border: var(--border);
+  border-radius: var(--columnheader-borders);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sticky {
+  position: sticky;
+}
+.sticky:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -10px;
+  width: 216px;
+  height: 100%;
+  background: var(--background);
+  z-index: -1;
+}
+.sticky:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: var(--cell-background);
+  z-index: -1;
+}
+[role=columnheader].sticky::after {
+  border-radius: var(--columnheader-borders);
+}
+[role=cell] {
+  z-index: 0;
+}
+[role=cell].sticky {
+  z-index: 1;
+}
+.card {
+  position: relative;
+  height: 5rem;
+  background: var(--card-background);
+  margin-bottom: var(--padding);
+  padding: 0.5rem 1rem;
+  border-radius: var(--card-borders);
+}
+.card:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 0.25rem;
+  height: 100%;
+  background: var(--card-left);
+  border-radius: var(--card-borders);
+}
+.placeholder {
+  border: var(--border);
+  border-radius: var(--radius);
+  background: var(--grey-surface);
+  margin-bottom: var(--padding);
+}

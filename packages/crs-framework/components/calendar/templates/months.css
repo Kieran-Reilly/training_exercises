@@ -1,0 +1,33 @@
+#months {
+  display: grid;
+  grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+  justify-items: center;
+  align-items: center;
+  grid-gap: 1rem;
+  margin-top: 1rem;
+}
+#months > [data-type=month-cell] {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--grey);
+  width: 6.3rem;
+  height: 3rem;
+  font-size: var(--text-size);
+  border-radius: var(--radius);
+}
+#months > div:hover:not([aria-selected = "true"]) {
+  background: var(--grey-s3);
+  cursor: pointer;
+}
+#months > [aria-selected=true] {
+  color: var(--blue);
+  background: var(--blue-s2);
+  font-weight: bold;
+}
+#months > [aria-selected=true]:after {
+  content: var(--checked-icon);
+  font-family: var(--icon-font-family);
+  padding-left: var(--chevron-padding);
+  font-weight: bold;
+}

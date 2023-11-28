@@ -1,0 +1,59 @@
+html {
+    /* colors */
+    --cl-primary: #0098E0;
+    --cl-primary-alt: white;
+    --cl-primary-shadow: #005C87B5;
+
+    /* form */
+    --cl-text: #232731;
+    --window: white;
+
+    --blue: #0276C2;
+    --blue-s1: #B9D8EC;
+    --blue-s2: #ECF7FF;
+
+    --red: #E00000;
+    --red-s1: #ED7D7D;
+    --red-s2: #F2AFAF;
+    --red-s3: #FBF3F3;
+
+    --green: #76C422;
+    --green-s1: #B8DF8E;
+    --green-s2: #E8F8D9;
+
+    --greensea: #16A085;
+    --greensea-s1: #C8E5E1;
+
+    --orange: #F97825;
+    --orange-s1: #F9B98F;
+    --orange-s2: #FEE5D5;
+
+    --yellow: #F1C40F;
+    --yellow-s1: #FBE381;
+    --yellow-s2: #FFF9DD;
+
+    --grey: #272C37;
+    --grey-s1: #757575;
+    --grey-s2: #DADADA;
+    --grey-s3: #F4F4F4;
+    --grey-surface: #F4F4F4;
+    --grey-s4: #F4F6F8;
+
+    --alt-fg: #FFFFFF;
+    --cl-li-hover: #EEEEEE;
+
+    /* sizes */
+    --border-width: 1px;
+    --double-border-width: 2px;
+    --input-height: 2rem;
+    --input-width: 15rem;
+    --radius: 4px;
+    --padding: 0.5rem;
+    --half-padding: 0.25rem;
+    --inline-label-length: 10rem;
+
+    /* complex */
+    --border: var(--border-width) solid var(--grey-s2);
+    --drop-shadow: 0px 2px 3px #c0c0c0de;
+    --box-shadow: 0px 2px 3px silver;
+}

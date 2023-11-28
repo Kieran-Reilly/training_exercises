@@ -1,0 +1,52 @@
+:host {
+  --cl-bg: white;
+  --cl-selected-bg: var(--blue);
+  --cl-selected-fg: white;
+  --width: 0;
+  --height: 0;
+  display: flex;
+  background: var(--cl-bg);
+  border-radius: var(--radius);
+  width: max-content;
+  height: max-content;
+  min-width: max-content;
+  box-sizing: border-box;
+  position: relative;
+  user-select: none;
+  border: var(--border);
+}
+:focus-within {
+  outline: none;
+  border: var(--border) solid var(--blue);
+}
+:host(:focus-within) ::slotted(button:focus) {
+  outline: var(--border) solid var(--blue);
+  box-shadow: var(--blue) 0 0 0 2px;
+}
+::slotted(button) {
+  border: 0 !important;
+  outline: none !important;
+  background: transparent !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  font-weight: normal !important;
+  margin-right: 3px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+::slotted(button:active) {
+  color: var(--blue) !important;
+}
+::slotted([aria-selected="true"]) {
+  background: var(--cl-selected-bg) !important;
+  color: var(--cl-selected-fg) !important;
+  font-weight: bold !important;
+}
+::slotted(*) {
+  box-sizing: border-box;
+}
+.parent {
+  z-index: 1;
+  padding: var(--half-padding);
+  display: flex;
+}

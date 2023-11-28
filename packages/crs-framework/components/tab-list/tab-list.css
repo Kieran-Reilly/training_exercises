@@ -1,0 +1,28 @@
+:host {
+  --cl-selected-fg: var(--cl-primary);
+  --cl-bg: var(--grey-surface);
+  --cl-active-bg: var(--alt-fg);
+  display: flex;
+  width: 100%;
+  background: var(--cl-bg);
+}
+::slotted(*) {
+  display: flex;
+  align-items: center;
+  margin-top: 0.25rem;
+  padding: var(--padding);
+  border-radius: var(--radius) var(--radius) 0 0;
+  white-space: nowrap;
+  cursor: pointer;
+  user-select: none;
+}
+::slotted(:first-child) {
+  margin-left: 0.25rem;
+}
+::slotted([aria-selected="true"]) {
+  border-bottom: var(--double-border-width) solid var(--cl-selected-fg);
+  color: var(--cl-selected-fg);
+  background: var(--cl-active-bg);
+  font-weight: bold;
+  cursor: default;
+}

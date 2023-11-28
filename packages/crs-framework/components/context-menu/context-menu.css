@@ -1,0 +1,135 @@
+:host {
+  --icon-font: "";
+  --height: max-content;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: transparent;
+  z-index: 999999;
+  user-select: none;
+}
+.back {
+  width: 100%;
+  height: 100%;
+}
+.popup {
+  margin: 0;
+  border: var(--border);
+  background: var(--grey-surface);
+  box-shadow: var(--drop-shadow);
+  width: max-content;
+  height: var(--height);
+  min-width: 200px;
+  min-height: 300px;
+  border-radius: var(--radius);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--window);
+}
+ul[role=menu] {
+  overflow: auto;
+}
+hr {
+  border: var(--border);
+}
+li {
+  --cl-icon: black;
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+li[hidden] {
+  display: none;
+}
+li:hover {
+  background: var(--cl-li-hover);
+}
+li[data-icon]::before {
+  content: attr(data-icon);
+  font-family: var(--icon-font);
+  font-size: 1.5rem;
+  margin-right: var(--padding);
+  color: var(--cl-icon);
+}
+li[aria-selected=true]::after {
+  content: "check";
+  font-family: crsfrw;
+  position: absolute;
+  right: 8px;
+  color: var(--blue);
+}
+[aria-hidden=true] {
+  display: none !important;
+}
+#resize {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  fill: gray;
+  cursor: nwse-resize;
+}
+ul[role=menu]::-webkit-scrollbar-track {
+  padding: 0.25rem 0;
+  background-color: transparent;
+}
+ul[role=menu]::-webkit-scrollbar {
+  width: 0.25rem;
+}
+ul[role=menu]::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  box-shadow: inset 0 0 5px var(--grey-s1);
+  background-color: transparent;
+}
+#symbols {
+  display: none;
+}
+filter-header {
+  --close-display: inline-block;
+}
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 100%;
+  display: none;
+  border: var(--border);
+  background: var(--window);
+  box-shadow: var(--drop-shadow);
+  width: max-content;
+  height: max-content;
+  min-width: 200px;
+  border-radius: var(--radius);
+}
+li[aria-expanded=true] > .submenu {
+  display: block;
+}
+.hierarchy {
+  overflow: inherit !important;
+}
+.hierarchy + #resize {
+  visibility: hidden;
+  pointer-events: none;
+}
+.parent-menu-item:after {
+  font-family: var(--icon-font);
+  font-size: 1.5rem;
+  content: "chevron-right";
+  position: absolute;
+  right: var(--padding);
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

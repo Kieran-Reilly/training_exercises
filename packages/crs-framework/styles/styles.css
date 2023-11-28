@@ -1,0 +1,77 @@
+@import "./lib/variables.css";
+@import "./lib/text.css";
+@import "./lib/footer.css";
+@import "./lib/header.css";
+@import "./lib/main.css";
+@import "./lib/buttons.css";
+@import "./lib/aside.css";
+@import "./lib/color-classes.css";
+@import "./lib/input.css";
+@import "./lib/label-input.css";
+@import "./lib/dragdrop.css";
+
+@font-face {
+    font-family: SourceSansPro;
+    src: url(/resources/fonts/Source_Sans_Pro/SourceSansPro-Regular.ttf);
+}
+
+@font-face {
+    font-family: selection;
+    src: url(/resources/fonts/icons/selection.ttf);
+}
+
+@font-face {
+    font-family: crsfrw;
+    src: url('/resources/fonts/icons/crs-framework.woff?ydxlqn');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+*:focus {
+    border: solid 1px var(--blue);
+}
+
+*[disabled] {
+    cursor: not-allowed !important;
+}
+
+i {
+    font-style: normal;
+}
+
+html, body {
+    font-family: 'SourceSansPro', sans-serif;
+    font-size: 16px;
+    color: var(--cl-text);
+    fill: var(--cl-text);
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+}
+
+body {
+    display: grid;
+    grid-template-rows: 3rem auto 2rem;
+}
+
+header, footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+nav {
+    height: 100%;
+    overflow: auto;
+}
+
+.hide {
+    display: none;
+}

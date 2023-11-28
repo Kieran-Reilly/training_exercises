@@ -1,0 +1,27 @@
+[data-severity="error"] {
+    --severity-colour: var(--red);
+    --severity-background-colour: var(--red-s3);
+}
+
+[data-severity="warning"] {
+    --severity-colour: var(--orange);
+    --severity-background-colour: var(--orange-s2);
+}
+
+[data-severity="info"] {
+    --severity-colour: var(--blue);
+    --severity-background-colour: var(--blue-s2);
+}
+
+[data-severity] {
+    border-left: 0.375rem solid var(--severity-colour);
+    background-color: var(--severity-background-colour);
+}
+
+[data-severity]:before {
+    font-family: crsfrw;
+    content: "icon-" attr(data-severity);
+    color: var(--severity-colour);
+    margin-right: 0.4rem;
+    font-size: 1.5rem;
+}

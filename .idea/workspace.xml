@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8248a919-6409-489f-b9fa-4ceecefc4d6c" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/classes/bindable-element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/classes/crs-widget.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/classes/observable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/classes/perspective-element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/classes/view-base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/crs-binding.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/events/dom-events.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/events/event-emitter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/expressions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/expressions/code-factories/case.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/expressions/code-factories/if.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/expressions/code-factories/inflation.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/expressions/code-factories/translate.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/expressions/compiler.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/expressions/exp-sanitizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/expressions/exp-tokenizer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/idle/idleCallback.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/idle/idleTaskManager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/managers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/managers/inflation-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/managers/static-inflation-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/managers/templates-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/managers/translations-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/managers/value-converters-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/parsers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/parsers/attribute.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/parsers/attributes.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/parsers/element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/parsers/elements.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/attr-base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/attr-case.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/attr-if.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/attr-toggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/attr.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/call.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/classlist-base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/classlist-case.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/classlist-if.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/classlist-toggle.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/emit.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/post.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/process.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/ref.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/set-value.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/style-base.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/style-case.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/style-if.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/style-property.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/utils/create-event-parameters.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/utils/get-queries.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/attributes/utils/parse-event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/element/template-repeat-for.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/element/template-src.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/element/template.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/events/keyboard-event.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/properties/bind.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/properties/changed.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/properties/once.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/properties/one-way.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/properties/utils/binding-parse.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/properties/utils/binding-update.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/providers/text/text.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/proxies/array-proxy.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/store/binding-data.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/store/data-def-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/store/event-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/store/template-inflation-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/store/template-provider-store.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils/converter-parts.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils/dispose-properties.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils/dom-collection-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils/get-path-of-file.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils/get-value-on-path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils/mark-element.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils/relative-path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-binding/utils/set-value-on-path.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/array-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/html-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/system-actions.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-router/crs-loader.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-router/crs-loader.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-router/crs-router.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-router/crs-static-provider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-router/crs-url-provider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-router/crs-utils.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-schema/base-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-schema/crs-schema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-schema/html/crs-base-manager.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-schema/html/crs-base-provider.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-schema/html/crs-html-parser.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-schema/html/crs-template-parser.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/classes/bindable-element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/classes/crs-widget.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/classes/observable.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/classes/perspective-element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/classes/view-base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/crs-binding.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/events/dom-events.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/events/event-emitter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/expressions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/expressions/code-factories/case.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/expressions/code-factories/if.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/expressions/code-factories/inflation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/expressions/code-factories/translate.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/expressions/compiler.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/expressions/exp-sanitizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/expressions/exp-tokenizer.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/idle/idleCallback.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/idle/idleTaskManager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/managers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/managers/inflation-manager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/managers/static-inflation-manager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/managers/templates-manager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/managers/translations-manager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/managers/value-converters-manager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/parsers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/parsers/attribute.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/parsers/attributes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/parsers/element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/parsers/elements.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/attr-base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/attr-case.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/attr-if.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/attr-toggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/attr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/call.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/classlist-base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/classlist-case.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/classlist-if.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/classlist-toggle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/emit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/post.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/process.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/ref.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/set-value.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/style-base.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/style-case.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/style-if.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/style-property.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/utils/create-event-parameters.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/utils/get-queries.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/attributes/utils/parse-event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/element/template-repeat-for.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/element/template-src.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/element/template.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/events/keyboard-event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/properties/bind.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/properties/once.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/properties/one-way.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/properties/utils/binding-parse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/properties/utils/binding-update.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/providers/text/text.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/proxies/array-proxy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/store/binding-data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/store/data-def-store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/store/event-store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/store/template-inflation-store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/store/template-provider-store.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils/converter-parts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils/dispose-properties.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils/dom-collection-manager.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils/get-path-of-file.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils/get-value-on-path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils/mark-element.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils/relative-path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/binding-engine3/utils/set-value-on-path.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected.lightdom.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/available-selected.lightdom.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/items-factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/available-selected/items-factory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/busy-ui/busy-ui-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/busy-ui/busy-ui-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/busy-ui/busy-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/busy-ui/busy-ui.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/busy-ui/busy-ui.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/busy-ui/busy-ui.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/busy-ui/busy-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/busy-ui/busy-ui.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/calendar-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/calendar-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/calendar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/calendar.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/calendar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/calendar.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/calendar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/managers/calendar-keyboard-input-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/managers/calendar-keyboard-input-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/days.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/days.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/days.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/days.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/months.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/months.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/months.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/months.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/years.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/years.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/years.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/calendar/templates/years.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/check-list/check-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/check-list/check-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/check-list/check-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/check-list/check-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/checkbox/checkbox.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/checkbox/checkbox.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/checkbox/checkbox.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/checkbox/checkbox.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/checkbox/checkbox.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/checkbox/checkbox.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-gradient.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-gradient.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-panel.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-panel.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-picker.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-picker.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-picker.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-picker.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-picker.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/color-picker/color-picker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/combo-box/combo-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/combo-box/combo-box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/combo-box/combo-box.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/combo-box/combo-box.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/combo-box/combo-box.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/combo-box/combo-box.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu-full.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu-full.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu-full.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu-full.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu-full.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu-full.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/context-menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/utils/build-elements.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/utils/build-elements.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/utils/select-item-handler.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/context-menu/utils/select-item-handler.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/actions/editing-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/actions/editing-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/column-groups.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/column-groups.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/columns.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/columns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/data-grid.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/data-grid.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/data-grid.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/data-grid.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/input.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/rows.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/rows.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/selection.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/selection.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/value-converters/selected-converter.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-grid/value-converters/selected-converter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/data-table-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/data-table-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/data-table-extensions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/data-table-extensions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/data-table.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/data-table.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/data-table.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/data-table.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/cell-editing-extension.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/cell-editing-extension.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/body.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/body.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/body.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/body.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/footer.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/footer.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/item-template.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/item-template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/update-filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/filter-extension/update-filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/formatting-extension.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/formatting-extension.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/resize-extension.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/extensions/resize-extension.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/factories/columns-headers-factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/factories/columns-headers-factory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/factories/row-factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/factories/row-factory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/factories/row-inflation-factory.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/factories/row-inflation-factory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/managers/columns-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/managers/columns-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/managers/keyboard-input-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/managers/keyboard-input-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/managers/mouse-input-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/managers/mouse-input-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/utils/columnsFromChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/utils/columnsFromChildren.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/data-table/utils/formattingFromChildren.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/data-table/utils/formattingFromChildren.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/dialog/dialog-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/dialog/dialog-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/dialog/dialog.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/dialog/dialog.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/dialog/dialog.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/dialog/dialog.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/dialog/dialog.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/dialog/dialog.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/file-system/file-system.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/file-system/file-system.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/file-system/file-system.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/file-system/file-system.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/file-system/file-system.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/file-system/file-system.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/filter-header/filter-header.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/filter-header/filter-header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/filter-header/filter-header.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/filter-header/filter-header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/filter-header/filter-header.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/filter-header/filter-header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/group-box/group-box.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/group-box/group-box.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/group-box/group-box.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/group-box/group-box.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/group-box/group-box.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/group-box/group-box.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/columns.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/columns.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/kan-ban-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/kan-ban-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/kan-ban.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/kan-ban.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/kan-ban.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/kan-ban.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/kan-ban.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/kan-ban/kan-ban.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/label-counter/label-counter.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/label-counter/label-counter.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/label-counter/label-counter.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/label-counter/label-counter.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/label-counter/label-counter.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/label-counter/label-counter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/layout-container/layout-container.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/layout-container/layout-container.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-editor/markdown-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-editor/markdown-editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-editor/markdown-editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-editor/markdown-editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-editor/markdown-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-editor/markdown-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-viewer/markdown-viewer-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-viewer/markdown-viewer-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-viewer/markdown-viewer.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-viewer/markdown-viewer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-viewer/markdown-viewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/markdown/markdown-viewer/markdown-viewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/masked-input/mask-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/masked-input/mask-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/masked-input/masked-input.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/masked-input/masked-input.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/options-toolbar/options-toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/options-toolbar/options-toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/options-toolbar/options-toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/options-toolbar/options-toolbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/options-toolbar/options-toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/options-toolbar/options-toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/page-toolbar/page-toolbar.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/page-toolbar/page-toolbar.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/page-toolbar/page-toolbar.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/page-toolbar/page-toolbar.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/page-toolbar/page-toolbar.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/page-toolbar/page-toolbar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/schema/schema-editor/schema-editor.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/schema/schema-editor/schema-editor.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/schema/schema-editor/schema-editor.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/schema/schema-editor/schema-editor.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/schema/schema-editor/schema-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/schema/schema-editor/schema-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/schema/schema-viewer/schema-viewer.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/schema/schema-viewer/schema-viewer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/tab-list/tab-list.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/tab-list/tab-list.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/tab-list/tab-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/tab-list/tab-list.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/text-editor/editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/text-editor/editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/text-editor/text-editor.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/text-editor/text-editor.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/toast-notification/toast-notification-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/toast-notification/toast-notification-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/toast-notification/toast-notification.css" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/toast-notification/toast-notification.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/toast-notification/toast-notification.html" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/toast-notification/toast-notification.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/components/toast-notification/toast-notification.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/components/toast-notification/toast-notification.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/actions/collection-selection-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/actions/collection-selection-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/actions/columns-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/actions/columns-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/actions/ui-canvas/ui-canvas.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/actions/ui-canvas/ui-canvas.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/actions/virtualization-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/actions/virtualization-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/binding-extensions/markdown-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/binding-extensions/markdown-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/binding-extensions/schema-template.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/binding-extensions/schema-template.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/load-resources.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/load-resources.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/collection-selection-manager/collection-selection-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/collection-selection-manager/collection-selection-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-base.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-base.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-idb-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-idb-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-memory-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-memory-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-perspective-provider.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-perspective-provider.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-types.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/data-manager/data-manager-types.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/perspective-manager/perspective-manager-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/perspective-manager/perspective-manager-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/record-manager/model-proxy.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/record-manager/model-proxy.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/record-manager/record-manager-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/record-manager/record-manager-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/scroll-manager/scroll-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/scroll-manager/scroll-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/virtualization/inflation-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/virtualization/inflation-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/virtualization/size-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/virtualization/size-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-framework/src/managers/virtualization/virtualization-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/src/managers/virtualization/virtualization-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-modules/crs-modules.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-modules/crs-modules.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/action-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/action-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/array-actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/binding-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/binding-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/colors-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/colors-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/compile-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/compile-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/component-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/component-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/condition-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/condition-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/console-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/console-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/css-grid-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/css-grid-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/data-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/data-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/data-processing-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/data-processing-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/date-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/date-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/debug-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/debug-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/dom-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/dom-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/dom-binding-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/dom-binding-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/dom-collection-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/dom-collection-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/dom-interactive-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/dom-interactive-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/dom-observer-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/dom-observer-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/dom-utils-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/dom-utils-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/dom-widgets-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/dom-widgets-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/events-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/events-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/files-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/files-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/fixed-layout-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/fixed-layout-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/fixed-position-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/fixed-position-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/fs-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/fs-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/html-actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/local-storage-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/local-storage-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/loop-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/loop-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/dragdrop-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/dragdrop-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/dragdrop-manager/drag-utils.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/dragdrop-manager/drag-utils.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/dragdrop-manager/drag.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/dragdrop-manager/drag.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/dragdrop-manager/drop.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/dragdrop-manager/drop.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/dragdrop-manager/marker.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/dragdrop-manager/marker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/dragdrop-manager/options.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/dragdrop-manager/options.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/dragdrop-manager/placeholder.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/dragdrop-manager/placeholder.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/grid-resize-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/grid-resize-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/indexdb-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/indexdb-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/indexdb-manager/indexdb-worker.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/indexdb-manager/indexdb-worker.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/input-mapping.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/input-mapping.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/move-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/move-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/resize-element-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/resize-element-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/router-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/router-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/managers/size-manager.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/managers/size-manager.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/markdown-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/markdown-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/math-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/math-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/media-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/media-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/module-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/module-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/object-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/object-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/process-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/process-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/random-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/random-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/rest-services-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/rest-services-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/route-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/route-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/schema-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/schema-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/scripts-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/scripts-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/session-storage-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/session-storage-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/string-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/string-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/styles-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/styles-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/system-actions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/translations-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/translations-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/action-systems/validate-actions.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/action-systems/validate-actions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/components/view-loader/view-loader.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/components/view-loader/view-loader.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/crs-process-api.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/crs-process-api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/action-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/action-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/array-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/array-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/binding-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/binding-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/colors-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/colors-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/compile-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/compile-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/component-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/component-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/condition-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/condition-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/console-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/console-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/css-grid-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/css-grid-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/data-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/data-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/data-processing-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/data-processing-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/date-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/date-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/debug-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/debug-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/dom-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/dom-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/dom-binding-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/dom-binding-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/dom-collection-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/dom-collection-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/dom-interactive-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/dom-interactive-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/dom-observer-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/dom-observer-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/dom-utils-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/dom-utils-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/dom-widgets-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/dom-widgets-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/events-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/events-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/files-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/files-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/fixed-layout-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/fixed-layout-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/fixed-position-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/fixed-position-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/fs-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/fs-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/html-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/html-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/local-storage-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/local-storage-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/loop-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/loop-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/drag-utils.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/drag-utils.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/drag.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/drag.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/drop.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/drop.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/marker.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/marker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/options.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/options.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/placeholder.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/dragdrop-manager/placeholder.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/grid-resize-manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/grid-resize-manager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/indexdb-manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/indexdb-manager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/indexdb-manager/indexdb-worker.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/indexdb-manager/indexdb-worker.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/move-manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/move-manager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/resize-element-manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/resize-element-manager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/managers/size-manager.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/managers/size-manager.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/markdown-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/markdown-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/math-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/math-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/media-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/media-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/module-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/module-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/object-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/object-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/process-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/process-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/random-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/random-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/rest-services-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/rest-services-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/schema-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/schema-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/scripts-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/scripts-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/session-storage-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/session-storage-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/string-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/string-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/styles-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/styles-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/system-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/system-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/translations-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/translations-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/docs/src/action-systems/validate-actions.md" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/docs/src/action-systems/validate-actions.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/packages/crs-process-api/tools/checksource.js" beforeDir="false" afterPath="$PROJECT_DIR$/packages/crs-framework/packages/crs-process-api/tools/checksource.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="jfxaadp7" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2RNGUOSB4AZQjv3pT5J5srpfMYG" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+    <option name="showModules" value="false" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/caperaven projects/crs-applicaion-template-3/packages/crs-framework",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "settings.space",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\packages\crs-framework" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\packages" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\packages\binding-engine3" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\styles" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\src" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3" />
+      <recent name="F:\caperaven projects\crs-applicaion-template-3\styles" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="create-worker-files" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="create-worker-files" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.create-worker-files" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8248a919-6409-489f-b9fa-4ceecefc4d6c" name="Changes" comment="" />
+      <created>1687083139586</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1687083139586</updated>
+      <workItem from="1687083140696" duration="986000" />
+      <workItem from="1687084147892" duration="1616000" />
+      <workItem from="1687157280157" duration="32000" />
+      <workItem from="1687165515999" duration="6184000" />
+      <workItem from="1687175022443" duration="312000" />
+      <workItem from="1687175348870" duration="720000" />
+      <workItem from="1687177382529" duration="8190000" />
+      <workItem from="1687186431500" duration="13153000" />
+      <workItem from="1687242750846" duration="10348000" />
+      <workItem from="1687262912018" duration="36000" />
+      <workItem from="1687346451789" duration="605000" />
+      <workItem from="1687511730675" duration="2542000" />
+      <workItem from="1687769872925" duration="1115000" />
+      <workItem from="1688364970745" duration="92000" />
+      <workItem from="1688382814667" duration="817000" />
+      <workItem from="1688478757925" duration="113000" />
+      <workItem from="1689366292854" duration="562000" />
+    </task>
+    <task id="LOCAL-00001" summary="initial">
+      <created>1687179819676</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1687179819676</updated>
+    </task>
+    <task id="LOCAL-00002" summary="initial">
+      <created>1687180365717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1687180365717</updated>
+    </task>
+    <task id="LOCAL-00003" summary="initial">
+      <created>1687182176849</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687182176849</updated>
+    </task>
+    <task id="LOCAL-00004" summary="initial">
+      <created>1687183738880</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1687183738880</updated>
+    </task>
+    <task id="LOCAL-00005" summary="initial">
+      <created>1687184061549</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1687184061549</updated>
+    </task>
+    <task id="LOCAL-00006" summary="initial">
+      <created>1687195485032</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1687195485032</updated>
+    </task>
+    <task id="LOCAL-00007" summary="initial">
+      <created>1687196998935</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1687196998935</updated>
+    </task>
+    <task id="LOCAL-00008" summary="initial">
+      <created>1687246720750</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1687246720751</updated>
+    </task>
+    <task id="LOCAL-00009" summary="initial">
+      <created>1687247405589</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1687247405589</updated>
+    </task>
+    <task id="LOCAL-00010" summary="initial">
+      <created>1687253805700</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1687253805700</updated>
+    </task>
+    <task id="LOCAL-00011" summary="initial">
+      <created>1687770165447</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1687770165447</updated>
+    </task>
+    <task id="LOCAL-00012" summary="initial">
+      <created>1687770869857</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1687770869857</updated>
+    </task>
+    <task id="LOCAL-00013" summary="update binding engine">
+      <created>1688478838573</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1688478838573</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="initial" />
+    <MESSAGE value="update binding engine" />
+    <option name="LAST_COMMIT_MESSAGE" value="update binding engine" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
+  </component>
+</project>

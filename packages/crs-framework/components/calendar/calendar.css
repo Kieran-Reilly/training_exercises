@@ -1,0 +1,104 @@
+* {
+  box-sizing: border-box;
+}
+:host {
+  --size: 2.5rem;
+  --text-size: 1rem;
+  --margin-size: 0.59rem;
+  --chevron-padding: 0.3rem;
+  --chevron-down-icon: "chevron-down";
+  --chevron-up-icon: "chevron-up";
+  --checked-icon: "check";
+  --icon-font-family: crsfrw;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  user-select: none;
+  height: 100%;
+  grid-row-gap: 0.75rem;
+}
+:focus {
+  outline: 0;
+  box-shadow: inset 0 0 0 0.125rem var(--blue);
+}
+#calendar-toolbar {
+  display: flex;
+  height: var(--size);
+  border: none;
+  color: var(--grey);
+}
+#calendar-toolbar #month,
+#year,
+#previous-month,
+#next-month {
+  display: inherit;
+  background: transparent;
+  height: var(--size);
+  cursor: pointer;
+  border-radius: var(--radius);
+  border: none;
+}
+#calendar-toolbar,
+#month,
+#year,
+#previous-month,
+#next-month {
+  justify-content: center;
+  align-items: center;
+}
+#calendar-toolbar #previous-month,
+#next-month {
+  width: var(--size);
+  font-family: var(--icon-font-family);
+  font-size: 1.5rem;
+}
+#calendar-toolbar #previous-month,
+#year {
+  margin-right: 1.2rem;
+}
+#calendar-toolbar #month,
+#year {
+  font-family: "SourceSansPro", sans-serif;
+  text-align: center;
+  font-size: var(--text-size);
+  font-weight: bold;
+}
+#calendar-toolbar #previous-month:hover,
+#next-month:hover,
+#month:hover,
+#year:hover {
+  background: var(--grey-s3);
+}
+#calendar-toolbar #year {
+  width: 5rem;
+}
+#calendar-toolbar #month {
+  width: 7.5rem;
+}
+#calendar-toolbar #year:after,
+#month:after {
+  font-family: var(--icon-font-family);
+  content: var(--chevron-down-icon);
+  padding-left: var(--chevron-padding);
+}
+.current-view {
+  color: var(--cl-primary-alt);
+  background: var(--blue) !important;
+}
+.current-view:after {
+  content: var(--chevron-up-icon) !important;
+}
+#chevron-right,
+#chevron-left {
+  width: 1.5rem;
+  height: 1.5rem;
+  rotate: 90deg;
+}
+#perspectiveElement {
+  height: 19.125rem;
+}
+@media screen and (max-width: 480px) {
+  #calendar-toolbar #previous-month,
+  #year {
+    margin-right: 2.2rem;
+  }
+}

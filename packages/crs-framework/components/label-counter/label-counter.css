@@ -1,0 +1,33 @@
+:host {
+  --border-color: 2px solid rgba(0, 0, 0, 0.2);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: max-content;
+  user-select: none;
+}
+div.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  border: var(--border-color);
+  border-radius: 12px;
+  border-radius: 5px;
+  padding: 0.25rem;
+  margin: 0 0.5rem 0 0.5rem;
+}
+[role=button] {
+  cursor: pointer;
+}
+svg * {
+  pointer-events: none;
+}
+[data-id=value] {
+  border-right: var(--border-color);
+  border-left: var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5rem;
+  margin: 0 0.25rem;
+}

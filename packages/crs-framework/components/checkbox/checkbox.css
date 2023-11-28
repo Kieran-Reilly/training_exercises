@@ -1,0 +1,35 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  align-items: center;
+}
+:host * {
+  user-select: none;
+}
+:host #btnCheck {
+  border: var(--border);
+  border-radius: var(--radius);
+  background: none;
+  padding: 0;
+  text-decoration: none;
+  outline: none;
+}
+:host([aria-checked="true"]) .icon {
+  color: var(--blue);
+}
+:host([aria-checked="false"]) .icon {
+  color: var(--cl-primary-alt);
+}
+:host #lblText {
+  margin-left: 10px;
+  font-size: 1rem;
+  color: var(--cl-text);
+  font-family: "SourceSansPro", sans-serif;
+  font-weight: bold;
+  pointer-events: none;
+}
+.icon {
+  font-family: crsfrw;
+  font-size: 1.5rem;
+}

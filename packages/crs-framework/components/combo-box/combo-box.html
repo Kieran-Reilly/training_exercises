@@ -1,0 +1,24 @@
+<template id="tplDefaultItem">
+    <option value.attr="value">${text}</option>
+</template>
+
+<header>
+    <input
+        id="search"
+        type="search"
+        value.bind="searchText"
+        keyup.call="search"
+    />
+
+    <button
+        id="btnDropdown"
+        aria-haspopup="true"
+        aria-expanded="false"
+        click.classlist.toggle="[ul](hide, red)">chevron-down</button>
+</header>
+
+<ul
+    class="hide"
+    click.classlist.toggle="[ul](hide, red)"
+    click.call="select">
+</ul>

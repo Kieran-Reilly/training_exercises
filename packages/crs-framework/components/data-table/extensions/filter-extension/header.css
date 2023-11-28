@@ -1,0 +1,14 @@
+[data-id=filter-grid] {
+  border: none;
+  outline: none;
+  height: 2rem;
+  width: 100%;
+  position: relative;
+}
+.filter {
+  font-family: "crsfrw";
+  font-size: 1.2rem;
+  height: 2rem;
+  width: 2rem;
+  translate: 0 0.4rem;
+}

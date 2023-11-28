@@ -1,0 +1,5 @@
+{
+	"scripts": {
+		"create-worker-files": "deno run --allow-all ./build/gen-service-worker-files.js"
+	}
+}

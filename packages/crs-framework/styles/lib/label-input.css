@@ -1,0 +1,103 @@
+label {
+    display: grid;
+    grid-template-columns: var(--input-width) auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: "label label" "input buttons";
+    width: 300px;
+}
+
+label * {
+    box-sizing: border-box;
+}
+
+label.inline {
+    grid-template-columns: var(--inline-label-length) var(--input-width) auto;
+    grid-template-areas: "label input buttons";
+    margin-bottom: var(--padding);
+}
+
+label div:first-child {
+    grid-area: label;
+    margin: auto 0;
+}
+
+label input {
+    grid-area: input;
+}
+
+label i {
+    grid-area: input;
+    display: block;
+    width: var(--input-height);
+    height: var(--input-height);
+    justify-self: flex-end;
+    z-index: 1;
+    font-family: crsfrw;
+    font-style: normal;
+}
+
+label input:required + i:before {
+    content: "";
+    display: flex;
+    height: var(--input-height);
+    width: var(--input-height);
+    align-items: center;
+    justify-content: center;
+}
+
+label input:required:placeholder-shown + i:before {
+    content: "required";
+    color: var(--orange);
+}
+
+label input:invalid + i:before {
+    content: "error-outline";
+    color: var(--red);
+}
+
+label input:valid + i:before {
+    content: "check-outline";
+    color: var(--green);
+}
+
+label button {
+    width: var(--input-height);
+    height: var(--input-height);
+}
+
+label [role="toolbar"] {
+    grid-area: buttons;
+}
+
+label:has(.button-group) input {
+    border-radius: var(--radius) 0 0 var(--radius);
+}
+
+label .button-group {
+    background-color: var(--grey-surface);
+    width: max-content;
+    display: flex;
+    height: var(--input-height);
+    border-radius: 0 var(--radius) var(--radius) 0;
+    border: var(--border);
+}
+
+label .button-group button {
+    font-family: crsfrw;
+    font-size: 1.25rem;
+    border:0;
+    background-color: transparent !important;
+}
+
+label .button-group button:not(button:last-child) {
+    border-right: var(--border);
+    border-radius: 0;
+}
+
+label .button-group button:focus {
+    border: solid 1px var(--blue);
+}
+
+label .button-group button:last-child {
+    border-radius: 0 var(--radius) var(--radius) 0;
+}

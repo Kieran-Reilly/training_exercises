@@ -1,0 +1,29 @@
+.drag-marker {
+    position: relative;
+    height: 0.5rem;
+    background-color: var(--cl-primary);
+    height: 2px;
+    transition: all 0.2s ease-out;
+}
+
+.drag-marker:before {
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    left: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--cl-primary);
+    border-radius: 50%;
+}
+
+.drag-marker:after {
+    content: "";
+    position: absolute;
+    top: -0.25rem;
+    right: 0;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--cl-primary);
+    border-radius: 50%;
+}

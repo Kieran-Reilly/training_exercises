@@ -1,0 +1,68 @@
+:host {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  width: max-content;
+}
+:host * {
+  box-sizing: border-box;
+}
+header {
+  display: flex;
+}
+input,
+button {
+  height: 2rem;
+}
+button {
+  font-family: crsfrw;
+  cursor: pointer;
+  border-radius: 0 var(--radius) var(--radius) 0;
+  border-left: 0;
+  outline: none;
+}
+input {
+  border-radius: var(--radius) 0 0 var(--radius);
+  border-right: var(--border);
+  outline: none;
+  padding: 0 var(--padding);
+}
+.hide {
+  display: none;
+}
+ul {
+  background: var(--window);
+  border: var(--border);
+  position: absolute;
+  z-index: 1;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-shadow: var(--drop-shadow);
+  border-radius: var(--radius);
+  padding: var(--padding);
+  max-height: 300px;
+  overflow: auto;
+}
+ul:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: transparent;
+  z-index: -1;
+}
+option {
+  padding: var(--padding);
+  cursor: pointer;
+  border-radius: var(--radius);
+}
+option:hover {
+  background: var(--grey-s3);
+  border: var(--border);
+}
+option.hidden {
+  display: none;
+}

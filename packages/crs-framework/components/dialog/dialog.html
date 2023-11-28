@@ -1,0 +1,13 @@
+<div class="popup">
+    <header>
+        <h2 id="headerText">&{dialog.title}</h2>
+        <button class="icon transparent" id="btnResize" data-action="resize" aria-label="&{dialog.resize}">
+            open-fullscreen
+        </button>
+        <button class="icon transparent" id="btnClose" data-action="close" aria-label="&{dialog.close}">close</button>
+    </header>
+
+    <slot name="body" id="body"></slot>
+
+    <footer></footer>
+</div>

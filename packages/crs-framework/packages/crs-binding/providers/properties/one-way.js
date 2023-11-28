@@ -1,0 +1,1 @@
+import{bindingUpdate as t}from"./utils/binding-update.js";import{bindingParse as r}from"./utils/binding-parse.js";class i{#e={};get store(){return this.#e}async parse(e,a){await r(e,a,".one-way")}async update(e,...a){await t(e,this.#e,...a)}async clear(e){delete this.#e[e]}}export{i as default};

@@ -1,0 +1,1 @@
+class i{constructor(s){this.parser=s,this.isManager=!0}async dispose(){await this.reset(),delete this.parser}async assert(s,r,t){const e=s()==!0;return e&&r.push(t),!e}async reset(){}}export{i as BaseManager};

@@ -1,0 +1,22 @@
+:host {
+  --check-selected-bg: var(--blue);
+  user-select: none;
+}
+::slotted(li) {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin: var(--padding) 0;
+}
+::slotted(li)::before {
+  content: "check-box-blank";
+  font-family: crsfrw;
+  height: 1rem;
+  width: 1rem;
+  margin-right: var(--padding);
+}
+::slotted(li[aria-selected="true"])::before {
+  content: "check-box";
+  color: var(--check-selected-bg);
+}

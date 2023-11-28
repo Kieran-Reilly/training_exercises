@@ -1,0 +1,52 @@
+:host {
+  --columns: "";
+}
+:host * {
+  box-sizing: border-box;
+}
+:focus {
+  outline: none;
+  border: var(--double-border-width) solid var(--blue);
+}
+.header {
+  background-color: var(--grey-surface);
+  border: var(--border);
+}
+[role=row] {
+  display: grid;
+  grid-template-columns: var(--columns);
+  border-left: var(--border-width) solid var(--grey-s2);
+  border-right: var(--border-width) solid var(--grey-s2);
+}
+[role=cell],
+[role=columnheader] {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding: var(--padding);
+  border-right: var(--border-width) solid var(--grey-s2);
+  border-bottom: var(--border-width) solid var(--grey-s2);
+}
+[role=columnheader] {
+  display: flex;
+  align-items: center;
+  background: var(--grey-surface);
+  border-right: var(--border);
+  user-select: none;
+}
+.flex {
+  flex: 1;
+}
+[role=columnheader] * {
+  line-height: 1rem;
+}
+.resize,
+.filter {
+  font-family: "crsfrw";
+}
+.resize {
+  cursor: ew-resize;
+}
+.filter {
+  cursor: pointer;
+}

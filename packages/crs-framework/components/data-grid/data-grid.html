@@ -1,0 +1,171 @@
+<style>
+    :host {
+        --cl-border: silver;
+        --cl-column-back: #f2f2f2;
+        --border: 1px solid var(--cl-border);
+        --padding: 0.5rem;
+        --default-height: 2rem;
+        --default-padding: 0 var(--padding);
+
+        --columns: 400px 200px 400px 400px;
+
+        display: grid;
+        grid-template-rows: 3rem 1fr;
+        width: 100%;
+        height: 100%;
+
+        border: var(--border);
+    }
+
+    .selection {
+        font-family: crsfrw;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+    }
+
+    .grouping {
+        border-bottom: var(--border);
+        user-select: none;
+    }
+
+    .grid {
+        position: relative;
+        overflow: auto;
+        display: grid;
+        grid-template-columns: var(--columns);
+        grid-template-rows: 2rem 2rem auto;
+    }
+
+    [role="columnheader"] {
+        background: var(--cl-column-back);
+        position: sticky;
+        top: 0;
+        z-index: 1;
+        border-right: var(--border);
+        border-bottom: var(--border);
+        height: var(--default-height);
+        display: flex;
+        align-items: center;
+        padding: var(--default-padding);
+        user-select: none;
+    }
+
+    .rows-container {
+        position: relative;
+        grid-column: -1/1;
+    }
+
+    .column-headers div {
+        border-right: var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    [role="rowgroup"] {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: var(--default-height);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: var(--default-padding);
+        border-bottom: var(--border);
+        border-right: var(--border);
+        user-select: none;
+    }
+
+    [role="rowheader"] {
+        position: sticky;
+        left: calc(var(--padding) + var(--default-height));
+    }
+
+    [role="row"] {
+        display: grid;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        grid-template-columns: var(--columns);
+        height: max-content;
+    }
+
+    [role="gridcell"] {
+        border-bottom: var(--border);
+        border-right: var(--border);
+        padding: 0.25rem 0.5rem;
+        align-items: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .left {
+        justify-content: flex-start;
+    }
+
+    .right {
+        justify-content: flex-end;
+    }
+
+    .middle {
+        justify-content: center;
+    }
+
+    .padding {
+        flex: 1;
+    }
+
+    .sticky-right {
+        position: sticky;
+        right: var(--padding);
+    }
+
+    .expand {
+        font-family: "icons";
+        font-size: 1.2rem;
+        width: var(--default-height);
+        height: var(--default-height);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: rotate 0.3s ease-out;
+        position: sticky;
+        left: var(--padding);
+        cursor: pointer;
+    }
+
+    [aria-expanded="true"] .expand {
+        rotate: 90deg;
+    }
+
+    .marker {
+        position: absolute;
+        top: 0;
+        left: 0;
+        translate: 0 2000px;
+        width: 1px;
+        height: 1px;
+    }
+
+    [data-column="0"] {
+        position: sticky;
+        left: 0;
+        z-index: 1;
+    }
+
+    [role="columnheader"][data-column="0"] {
+        z-index: 2;
+    }
+</style>
+
+<div class="grouping"></div>
+<div class="grid" role="grid">
+    <div class="rows-container" dblclick.call="rowExecute" ref="rowContainer">
+        <div class="marker"></div>
+    </div>
+</div>

@@ -1,0 +1,16 @@
+<template id="tplFolder">
+    <li data-type="directory" data-path.attr="path">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none">
+            <path d="M10.449 4.62688C10.031 4.22313 9.47 4 8.887 4H3.2C1.99 4 1.011 4.95625 1.011 6.125L1 18.875C1 20.0438 1.99 21 3.2 21H20.8C22.01 21 23 20.0438 23 18.875V8.25C23 7.08125 22.01 6.125 20.8 6.125H12L10.449 4.62688Z" />
+        </svg>
+        <div>${name}</div>
+    </li>
+</template>
+
+<template id="tplFile">
+    <li data-type="file" data-path.attr="path">${name}</li>
+</template>
+
+<ul dblclick.call="dblclick" click.call="click">
+
+</ul>

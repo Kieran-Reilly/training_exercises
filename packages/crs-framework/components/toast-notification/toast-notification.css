@@ -1,0 +1,74 @@
+@import "./../../styles/lib/buttons.css";
+:host {
+  box-sizing: border-box;
+  position: fixed;
+  height: max-content;
+  width: 30rem;
+  display: flex;
+  flex-direction: column;
+  gap: var(--padding);
+  outline: none;
+  border-width: 0;
+  transition: all 0.2s ease-out 0s;
+}
+toast-notification-item {
+  display: flex;
+  flex-direction: row;
+  box-sizing: border-box;
+  padding: var(--padding);
+  width: 100%;
+  height: max-content;
+  border-radius: var(--radius);
+  border: var(--border);
+  align-items: center;
+  box-shadow: var(--box-shadow);
+  background: #ffffff;
+}
+toast-notification-item #message {
+  flex: 1;
+  margin-left: var(--padding);
+}
+toast-notification-item[data-severity=success] {
+  background-color: var(--green-s2);
+  border: 1px solid var(--green);
+  border-left-width: 0.4rem;
+}
+toast-notification-item[data-severity=error] {
+  background-color: var(--red-s3);
+  border: 1px solid var(--red);
+  border-left-width: 0.4rem;
+}
+toast-notification-item[data-severity=warning] {
+  background-color: var(--yellow-s2);
+  border: 1px solid var(--orange);
+  border-left-width: 0.4rem;
+}
+toast-notification-item[data-severity=info] {
+  background-color: var(--blue-s2);
+  border: 1px solid var(--blue);
+  border-left-width: 0.4rem;
+}
+icon {
+  font-family: crsfrw;
+  font-size: 1.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+icon[data-severity=success] {
+  color: var(--green);
+}
+icon[data-severity=error] {
+  color: var(--red);
+}
+icon[data-severity=warning] {
+  color: var(--orange);
+}
+icon[data-severity=info] {
+  color: var(--blue);
+}
+#btnAction {
+  margin-right: var(--padding);
+  background: transparent;
+  font-weight: bold;
+}

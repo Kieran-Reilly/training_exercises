@@ -1,0 +1,102 @@
+@import "./../../styles/lib/buttons.css";
+@import "./../../styles/lib/variables.css";
+@import "./../../styles/lib/states.css";
+:host {
+  --header-height: 3rem;
+  --footer-height: 3.5rem;
+  --body-height: 3.5rem;
+}
+:host:before {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background: transparent;
+}
+:host(.not-modal):before {
+  pointer-events: none;
+}
+:host([data-allow-resize="true"]) .popup {
+  resize: both;
+}
+:host(.fullscreen) .popup {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 100;
+  resize: none;
+  translate: unset !important;
+  height: unset !important;
+  width: unset !important;
+}
+:host([data-allow-resize="false"]) #btnResize {
+  display: none;
+}
+:host([data-allow-move="false"]) header:active {
+  cursor: unset;
+}
+.popup {
+  position: absolute;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  background: var(--window);
+  border: var(--border);
+  box-shadow: var(--box-shadow);
+  border-radius: var(--radius);
+  resize: none;
+  overflow: auto;
+  min-width: var(--min-width, 18.75rem);
+  min-height: var(--min-height, 9rem);
+}
+.back {
+  height: 100%;
+  width: 100%;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+header:not(:empty) {
+  min-height: var(--header-height);
+  padding: 0 var(--padding);
+  border-bottom: var(--border);
+}
+#btnToday:hover,
+#btnDatePickerClose:hover {
+  background-color: var(--grey-s3) !important;
+}
+header:active {
+  cursor: grabbing;
+}
+header h2 {
+  flex: 1;
+  margin: 0;
+  font-size: 1.2rem;
+}
+::slotted([slot="body"]) {
+  padding: var(--padding);
+}
+button.icon {
+  font-size: 1.2rem;
+}
+footer:not(:empty) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  min-height: var(--footer-height);
+  border-top: var(--border);
+  padding: 0 var(--padding);
+}
+footer button {
+  margin-left: 0.5rem;
+}
+@media screen and (max-width: 480px) {
+  .popup {
+    translate: 0 14.0625rem !important;
+    min-width: 100%;
+  }
+}

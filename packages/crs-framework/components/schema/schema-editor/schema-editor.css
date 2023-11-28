@@ -1,0 +1,10 @@
+schema-editor {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 100%;
+  border: var(--border);
+}
+schema-editor .text-cell {
+  border-right: var(--border);
+  overflow: auto;
+}

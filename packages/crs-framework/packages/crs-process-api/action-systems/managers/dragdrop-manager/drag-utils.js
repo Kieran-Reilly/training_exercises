@@ -1,0 +1,1 @@
+function c(a,r){const t=r.drag?.query||"[draggable='true']",n=a.composedPath(),e=n[0];return e.matches(t)?r.drag.cpIndex!=null?n[r.drag.cpIndex]:e:e.parentElement?.matches(t)?e.parentElement:null}export{c as getDraggable};

@@ -1,0 +1,36 @@
+:host {
+  --close-display: none;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  align-items: center;
+  border-bottom: var(--border);
+}
+svg {
+  width: 1.2rem;
+  height: 1.2rem;
+}
+.filter-icon {
+  margin: var(--padding);
+}
+input {
+  background: transparent;
+  border: 0;
+  outline: 0;
+  flex: 1;
+}
+input:focus {
+  border: 0;
+}
+button {
+  width: 2.5rem;
+  height: 2.5rem;
+  outline: none;
+  margin: 0;
+  border: 0;
+  border-left: var(--border);
+  cursor: pointer;
+}
+#btnClose {
+  display: var(--close-display);
+}

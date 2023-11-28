@@ -1,0 +1,42 @@
+input {
+    padding: 0.5rem;
+    outline: none;
+    border: var(--border);
+    border-radius: var(--radius);
+    height: var(--input-height);
+    position: relative;
+    border-width: 1px;
+    border-style: solid;
+    box-sizing: border-box;
+}
+
+input:required:placeholder-shown {
+    border-color: var(--orange);
+    background-color: var(--yellow-s2);
+}
+
+input:focus, input:required:placeholder-shown:focus {
+    border: var(--border);
+    border-color: var(--blue);
+    background-color: var(--blue-s2);
+}
+
+input:invalid {
+    border-color: var(--red);
+    background-color: var(--red-s3);
+}
+
+input:valid {
+    border-color: var(--green);
+    background-color: var(--green-s2);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type=number] {
+    -moz-appearance:textfield; /* Firefox */
+}

@@ -1,0 +1,3 @@
+import m,{markdown_to_html as w}from"./../bin/markdown.js";await m();class g{static async perform(t,r,s,i){await this[t.action](t,r,s,i)}static async to_html(t,r,s,i){let a=t.args.markdown;(a.startsWith("$context.")||a.startsWith("$process.")||a.startsWith("$item."))&&(a=await crs.process.getValue(t.args.markdown,r,s,i));const o=await crs.process.getValue(t.args.parameters,r,s,i);if(o!=null||a.indexOf("&{")!=-1){const c=[],e=a.split(`
+`);for(let n=0;n<e.length;n++)e[n].indexOf("$template")==-1&&c.push(await crs.call("string","inflate",{template:e[n],parameters:o}));a=c.join(`
+`)}const l=w(a);return t.args.target!=null&&await crs.process.setValue(t.args.target,l,r,s,i),l}}crs.intent.markdown=g;export{g as MarkdownActions};

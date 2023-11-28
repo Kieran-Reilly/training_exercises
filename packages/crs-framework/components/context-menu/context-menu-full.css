@@ -1,0 +1,132 @@
+:host {
+  --icon-font: "";
+  --height: 100%;
+  display: block;
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: var(--window);
+  z-index: 999999;
+  user-select: none;
+}
+.back {
+  width: 100%;
+  height: 100%;
+}
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: 0;
+  border: var(--border);
+  background: var(--grey-surface);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+ul {
+  position: relative;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background: var(--window);
+}
+hr {
+  border: var(--border);
+}
+li {
+  --cl-icon: black;
+  padding: 0.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+}
+li[hidden] {
+  display: none;
+}
+li:hover {
+  background: var(--cl-li-hover);
+}
+li[data-icon]::before {
+  content: attr(data-icon);
+  font-family: var(--icon-font);
+  font-size: 1.5rem;
+  margin-right: var(--padding);
+  color: var(--cl-icon);
+}
+li[aria-selected=true]::after {
+  content: "check";
+  font-family: crsfrw;
+  position: absolute;
+  right: 8px;
+  color: var(--blue);
+}
+[aria-hidden=true] {
+  display: none !important;
+}
+ul::-webkit-scrollbar-track {
+  padding: 0.25rem 0;
+  background-color: transparent;
+}
+ul::-webkit-scrollbar {
+  width: 0.25rem;
+}
+ul::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  box-shadow: inset 0 0 5px var(--grey-s1);
+  background-color: transparent;
+}
+filter-header {
+  --close-display: inline-block;
+}
+.submenu {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: none;
+  border: var(--border);
+  background: var(--window);
+  width: 100%;
+  height: 100%;
+}
+.parent-menu-item[aria-expanded=true] > .submenu {
+  display: block;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+}
+.parent-menu-item:after {
+  font-family: var(--icon-font);
+  font-size: 1.5rem;
+  content: "chevron-right";
+  position: absolute;
+  right: var(--padding);
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#btnBack {
+  font-family: var(--icon-font);
+  font-size: 1.5rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding: 0;
+  display: none;
+}
+#btnBack.visible {
+  display: block;
+}
+.toolbar {
+  display: flex;
+  flex-direction: row;
+  height: 2.5rem;
+}
