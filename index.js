@@ -7,6 +7,7 @@ import "/packages/crs-framework/packages/crs-binding/classes/bindable-element.js
 import "/packages/crs-framework/packages/crs-modules/crs-modules.js";
 import {initialize} from "/packages/crs-framework/packages/crs-process-api/crs-process-api.js";
 import "/packages/crs-framework/packages/crs-process-api/components/view-loader/view-loader.js";
+//IMPORT ANY CUSTOM COMPONENTS IN HERE
 
 class IndexViewModel {
     #bid;

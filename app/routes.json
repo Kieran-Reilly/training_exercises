@@ -16,6 +16,10 @@
     {
       "title": "About",
       "view": "about"
+    },
+    {
+      "title": "Test",
+      "view": "test"
     }
   ]
 }
