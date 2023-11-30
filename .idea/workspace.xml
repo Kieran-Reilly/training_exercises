@@ -17,6 +17,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="package.json" />
+        <option value="CSS File" />
+        <option value="HTML File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -29,6 +32,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 8
+}</component>
   <component name="ProjectId" id="2RNGUOSB4AZQjv3pT5J5srpfMYG" />
   <component name="ProjectViewState">
     <option name="autoscrollFromSource" value="true" />
@@ -36,34 +42,37 @@
     <option name="showMembers" value="true" />
     <option name="showModules" value="false" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "master",
-    "last_opened_file_path": "F:/caperaven projects/crs-applicaion-template-3/packages/crs-framework",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "settings.space",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;DefaultHtmlFileTemplate&quot;: &quot;HTML File&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PragmaDev/training/training_exercises/app/test&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.space&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PragmaDev\training\training_exercises\app\test" />
       <recent name="F:\caperaven projects\crs-applicaion-template-3\packages\crs-framework" />
       <recent name="F:\caperaven projects\crs-applicaion-template-3\packages" />
       <recent name="F:\caperaven projects\crs-applicaion-template-3\packages\binding-engine3" />
       <recent name="F:\caperaven projects\crs-applicaion-template-3" />
-      <recent name="F:\caperaven projects\crs-applicaion-template-3\styles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\PragmaDev\training\training_exercises\documentations" />
       <recent name="F:\caperaven projects\crs-applicaion-template-3\src" />
       <recent name="F:\caperaven projects\crs-applicaion-template-3" />
       <recent name="F:\caperaven projects\crs-applicaion-template-3\styles" />
@@ -111,6 +120,10 @@
       <workItem from="1688382814667" duration="817000" />
       <workItem from="1688478757925" duration="113000" />
       <workItem from="1689366292854" duration="562000" />
+      <workItem from="1701180748873" duration="1580000" />
+      <workItem from="1701246388929" duration="127000" />
+      <workItem from="1701265191194" duration="2085000" />
+      <workItem from="1701333251218" duration="616000" />
     </task>
     <task id="LOCAL-00001" summary="initial">
       <created>1687179819676</created>
